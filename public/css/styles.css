@@ -714,16 +714,6 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
-  .container-sm, .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container-md, .container-sm, .container {
-    max-width: 720px;
-  }
-}
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
@@ -1303,7 +1293,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 769px) {
   .col-lg {
     flex: 1 0 0%;
   }
@@ -11665,9 +11655,29 @@ html {
   height: 80vw;
   max-height: 45rem;
   position: absolute;
-  bottom: 0;
   left: 50%;
   transform: translateX(-35%);
+  bottom: 0;
+}
+
+.profile .cropped {
+  z-index: 1;
+}
+
+.profile  .pop {
+  z-index: 2;
+
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 77%);
+}
+
+.profile .cropper {
+  overflow: hidden;
+  position: absolute;
+  height: 75vw;
+  width: 75vw;
+  max-height: 40rem;
+  max-width: 40rem;
+  border-radius: 5vw;
 }
 
 .profile .dots-1 {
@@ -11707,13 +11717,25 @@ html {
   fill: #1e30f3;
 }
 
+@media (max-width: 575px) {
+  .profile .profile-img {
+    height: 65vw;
+    transform: translateX(-40vw)
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     height: 60vw;
     width: 60vw;
   }
+  .profile .cropper {
+    height: 60vw;
+    width: 60vw;
+  }
   .profile .profile-img {
     height: 65vw;
+    transform: translateX(-40vw)
   }
   .profile .dots-1 {
     width: 3vw;
@@ -11737,8 +11759,13 @@ html {
     height: 50vw;
     width: 50vw;
   }
+  .profile .cropper {
+    height: 50vw;
+    width: 50vw;
+  }
   .profile .profile-img {
     height: 55vw;
+    transform: translateX(-25vw)
   }
   .profile .dots-1 {
     width: 3vw;
@@ -11762,8 +11789,13 @@ html {
     height: 40vw;
     width: 40vw;
   }
+  .profile .cropper {
+    height: 40vw;
+    width: 40vw;
+  }
   .profile .profile-img {
     height: 45vw;
+    transform: translateX(-20vw)
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11787,8 +11819,13 @@ html {
     height: 35vw;
     width: 35vw;
   }
+  .profile .cropper {
+    height: 35vw;
+    width: 35vw;
+  }
   .profile .profile-img {
-    height: 40vw;
+    height: 30vw;
+    transform: translateX(-20vw)
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11807,3 +11844,4 @@ html {
     left: -2vw;
   }
 }
+

@@ -190,10 +190,16 @@ body {
   content: none;
 }
 
+@media (max-width: 1100px) {
+  .timeline__event {
+    width: 80vw;
+  }
+
 @media (max-width: 786px) {
   .timeline__event {
     flex-direction: column;
     align-self: center;
+    width: 60vw;
   }
   .timeline__event__content {
     width: 100%;

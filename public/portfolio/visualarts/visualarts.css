@@ -1,0 +1,498 @@
+body {
+  overflow-x: hidden;
+}
+
+/*-- -------------------------- -->
+<---        Side By Side        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbs-1587,
+  #RPsbsr-1587 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #RPsbs-1587 .cs-container,
+  #RPsbsr-1587 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(2.5rem, 6vw, 4rem);
+  }
+  #RPsbs-1587 .cs-picture,
+  #RPsbsr-1587 .cs-picture {
+    width: 100%;
+    height: clamp(25rem, 80vw, 47rem);
+    display: block;
+    position: relative;
+  }
+  #RPsbs-1587 .cs-picture img,
+  #RPsbsr-1587 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  #RPsbs-1587 .cs-content,
+  #RPsbsr-1587 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 39.375rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    justify-content: center;
+  }
+  #RPsbs-1587 .cs-title,
+  #RPsbsr-1587 .cs-title {
+    /* 26 characters wide including spaces */
+    max-width: 26ch;
+    margin: 0;
+  }
+  #RPsbs-1587 .cs-card-group,
+  #RPsbsr-1587 .cs-card-group {
+    width: 100%;
+    /* 550px - 630px */
+    max-width: clamp(34.375rem, 50vw, 39.375rem);
+    padding: 0;
+    /* 24px - 40px */
+    margin: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(1.75rem, 4vw, 2.5rem) 0;
+    display: grid;
+    align-items: center;
+    gap: clamp(1rem, 4vw, 2.5rem);
+  }
+  #RPsbs-1587 .cs-item,
+  #RPsbsr-1587 .cs-item {
+    list-style: none;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #RPsbs-1587 .wrapper,
+  #RPsbsr-1587 .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+  #RPsbs-1587 .cs-item-number,
+  #RPsbsr-1587 .cs-item-number {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #RPsbs-1587 .cs-h3,
+  #RPsbsr-1587 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #RPsbs-1587 .cs-item-text,
+  #RPsbsr-1587 .cs-item-text {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #RPsbs-1587 .cs-button-solid,
+  #RPsbsr-1587 .cs-button-solid {
+    font-size: 1rem;
+    line-height: 3.5em;
+    text-decoration: none;
+    font-weight: 700;
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+    color: #fff;
+    padding: 0 3rem;
+    background-color: #1a1a1a;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+  #RPsbs-1587 .cs-button-solid:before,
+  #RPsbsr-1587 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #1a1a1a;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #RPsbs-1587 .cs-button-solid:hover,
+  #RPsbsr-1587 .cs-button-solid:hover {
+    color: var(--primary);
+  }
+  #RPsbs-1587 .cs-button-solid:hover:before,
+  #RPsbsr-1587 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbs-1587 .cs-container,
+  #RPsbsr-1587 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #RPsbs-1587 .cs-content,
+  #RPsbsr-1587 .cs-content {
+    width: 50%;
+    max-width: 39.375rem;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #RPsbs-1587 .cs-card-group,
+  #RPsbsr-1587 .cs-card-group {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  #RPsbs-1587 .cs-item,
+  #RPsbsr-1587 .cs-item {
+    grid-column: span 6;
+  }
+  #RPsbs-1587 .cs-picture,
+  #RPsbsr-1587 .cs-picture {
+    height: auto;
+    min-height: 32.8125rem;
+    filter: drop-shadow(10px 10px 4px #555555);
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbs-1587 .cs-content,
+  #RPsbsr-1587 .cs-content {
+    padding: 5.25rem 0;
+    align-self: center;
+  }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbsr-1587 {
+    background-color: #f7f7f7;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbsr-1587 .cs-picture {
+    order: 2;
+  }
+}
+                                
+
+
+/*-- -------------------------- -->
+<---         Gallery            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #gallery-1716 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #gallery-1716 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #gallery-1716 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #gallery-1716 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #gallery-1716 .cs-text:last-of-type {
+    /* 32px - 64px */
+    margin-bottom: clamp(2rem, 7vw, 4rem);
+  }
+  #gallery-1716 .cs-text:last-of-type:before {
+    /* colored overlay rectangle - positioned absolute to the section tag because it is the nearest parent with a decalred position relative */
+    content: '';
+    width: 100%;
+    height: 10em;
+    opacity: .1;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #gallery-1716 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: #1a1a1a;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #gallery-1716 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .3s;
+  }
+  #gallery-1716 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #gallery-1716 .cs-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* sends it to the top in the 1st position */
+    order: -1;
+  }
+  #gallery-1716 .cs-picture {
+    width: 100%;
+    /* changes at tablet */
+    height: 100vw;
+    max-height: 25rem;
+    display: block;
+    position: relative;
+    z-index: 1;
+    grid-column: span 4;
+  }
+  #gallery-1716 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  /*
+  #gallery-1716 .cs-picture:active img, .cs-picture:focus img {
+    height: 40rem;
+    width: max-content;
+    z-index: 10;
+  }*/
+
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #gallery-1716 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #gallery-1716 .cs-content {
+    padding-top: 2rem;
+    max-width: 19rem;
+    /* 32px - 64px, ensures theres always a gap at the bottom to space out the content from the bottom of the container and let the colored rectangle shape be a little bigger and take up more space */
+    padding-bottom: clamp(2rem, 7vw, 4rem);
+  }
+  #gallery-1716 .cs-text:last-of-type {
+    /* add position relative so the colored rectangle is now absolutely positioned to the cs-text parent. We also only want these styles on the last paragraph tag */
+    position: relative;
+    z-index: 1;
+  }
+  #gallery-1716 .cs-text:last-of-type:before {
+    width: 250vw;
+    height: 10em;
+    background: #1a1a1a;
+    top: calc(100% + 1.8rem);
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  #gallery-1716 .cs-gallery {
+    height: auto;
+  }
+  #gallery-1716 .cs-picture {
+    height: 100%;
+    max-height: 100%;
+    /* 280px - 420px */
+    min-height: clamp(17.5rem, 37vw, 26.25rem);
+  }
+}
+                                
+/*-- -------------------------- -->
+<---      Photo Gallery         -->
+<--- -------------------------- -*/
+
+
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto;   
+}
+
+
+.portfolio-top {
+    text-align: left;
+    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+}
+
+.text-section {
+  max-width: 24rem;
+  padding-right: 1rem;
+  align-content: center;
+}
+
+.top-photos {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* 12-column layout for flexible placement */
+    
+    gap: 20px;
+    position: relative;
+    margin-bottom: -11em;
+}
+
+.large {
+  grid-column: span 2;
+}
+
+.top-left {
+  grid-column: 1 / span 5;
+  grid-row: 1;
+  z-index: 3;
+}
+
+.top-right {
+  border: 2px solid #333;
+  transform: translateY(-10em);
+  grid-column: 5 / span 5;
+  grid-row: 2;
+  z-index: 2;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: transform 0.3s ease;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.photos-grey-bar {
+  position: absolute; 
+  z-index: -1;
+  left: -10%; 
+  width: 120%; 
+  height: 70%;
+  top: 25%;
+  background: #e2e3e4;
+}
+
+.photo-grid {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr); /* 12-column layout for flexible placement */
+
+
+    gap: 20px;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 5em;
+}
+
+.medium {
+  border: 2px solid #333;
+  z-index: 2;
+  grid-column: span 9;
+}
+
+.high{
+    grid-row: 1;
+    transform: translateY(3em)
+}
+
+.low {
+  grid-row: 2;
+}
+
+.photo3 {
+    grid-column: 1 / span 5;
+}
+.photo4 {
+    grid-column: 4 / span 5;
+}
+.photo5 {
+    grid-column: 7 / span 5;
+}
+.photo6 {
+    grid-column: 10 / span 5;
+}
+.photo7 {
+    grid-column: 13 / span 5;
+}
+.photo8 {
+    grid-column: 16 / span 5;
+}

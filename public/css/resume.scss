@@ -37,7 +37,6 @@ body {
 .timeline {
 	display: flex;
 	flex-direction: column;
-	margin: $margin auto;
 	margin-bottom: 40px;
 	position: relative;
 
@@ -48,7 +47,7 @@ body {
 		margin: $spacing 0;
 		border-radius: $bdrs;
 		align-self: center;
-		width: 60vw;
+		width: 80vw;
 		font-size: 14px;
 
 		&:nth-child(2n + 1) {
@@ -255,6 +254,24 @@ body {
 	}
 }
 
+@media (min-width: 900px) {
+	.timeline__event {
+		flex-direction: column;
+		align-self: center;
+		&__content {
+			width: 100%;
+	}
+}
+
+@media (max-width: 900px) {
+	.timeline__event {
+		flex-direction: column;
+		align-self: center;
+		&__content {
+			width: 100%;
+	}
+}
+
 @media (max-width: 786px) {
 	.timeline__event {
 		flex-direction: column;
@@ -262,6 +279,7 @@ body {
 		&__content {
 			width: 100%;
 		}
+		
 
 		&__icon {
 			border-radius: $bdrs $bdrs 0 0;
