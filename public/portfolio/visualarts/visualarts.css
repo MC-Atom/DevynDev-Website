@@ -69,7 +69,6 @@ body {
     /* 24px - 40px */
     margin: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(1.75rem, 4vw, 2.5rem) 0;
     display: grid;
-    align-items: center;
     gap: clamp(1rem, 4vw, 2.5rem);
   }
   #RPsbs-1587 .cs-item,
@@ -287,7 +286,50 @@ body {
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
+  .cs-button-solid-photo {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: #1a1a1a;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+
+  .cs-button-solid-photo:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .3s;
+  }
   #gallery-1716 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .3s;
+  }
+  .cs-button-solid-photo:before {
     content: '';
     position: absolute;
     height: 100%;
@@ -302,6 +344,11 @@ body {
   #gallery-1716 .cs-button-solid:hover:before {
     width: 100%;
   }
+  .cs-button-solid-photo:hover:before {
+    width: 100%;
+    color: #fff;
+  }
+  
   #gallery-1716 .cs-gallery {
     width: 100%;
     display: grid;
@@ -327,6 +374,15 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+  }
+  .posters-grey-bar {
+    position: absolute; 
+    z-index: -1;
+    left: -50%; 
+    width: 200%; 
+    height: 45%;
+    top: 60%;
+    background: #e2e3e4;
   }
   /*
   #gallery-1716 .cs-picture:active img, .cs-picture:focus img {
@@ -371,6 +427,9 @@ body {
     max-height: 100%;
     /* 280px - 420px */
     min-height: clamp(17.5rem, 37vw, 26.25rem);
+  }
+  .posters-grey-bar {
+    height: 0;
   }
 }
                                 
@@ -495,4 +554,130 @@ body {
 }
 .photo8 {
     grid-column: 16 / span 5;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 650px) {
+    .text-section {
+        max-width: 20rem;
+    }
+    .top-photos {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .top-right {
+        border: 2px solid #333;
+        transform: translateY(0);
+        grid-column: 5 / span 5;
+        grid-row: 2;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio-top {
+        flex-direction: column;
+    }
+    .text-section {
+        max-width: 100%;
+    }
+    .top-photos {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .top-right {
+        border: 2px solid #333;
+        transform: translateY(0);
+        grid-column: 5 / span 5;
+        grid-row: 2;
+        z-index: 2;
+    }
+    .photo-grid {
+        grid-template-columns: repeat(8, 1fr); /* 12-column layout for flexible placement */
+
+
+        gap: 20px;
+        position: relative;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0;
+        margin-bottom: -10rem;
+    }
+    .photo5 {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    transform: translateY(-3em)
+    }
+    .photo6 {
+        grid-column: 4 / span 5;
+        grid-row: 4;
+        transform: translateY(-6em)
+    }
+    .photo7 {
+        grid-column: 1 / span 5;
+        grid-row: 5;
+        transform: translateY(-9em)
+    }
+    .photo8 {
+        grid-column: 4 / span 5;
+        grid-row: 6;
+        transform: translateY(-12em)
+    }
+    .photos-grey-bar {
+        position: absolute; 
+        z-index: -1;
+        left: -10%; 
+        width: 120%; 
+        height: 83%;
+        top: 0%;
+        background: #e2e3e4;
+    }
+}
+
+/*-- -------------------------- -->
+<---          Lark Tank         -->
+<--- -------------------------- -*/
+
+.lark-tank-iframe {
+    height: 25vw;
+    aspect-ratio: 16 / 9;
+    align-self: center;
+    border: #1a1a1a;
+    border-width: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lark-grey-bar {
+  position: absolute; 
+  z-index: -1;
+  left: -50%; 
+  width: 200%; 
+  height: 50%;
+  top: 75%;
+  background: #e2e3e4;
+}
+
+.larktank-container {
+    border: 3px solid #ecff21;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    background: -webkit-linear-gradient(
+        315deg,
+        rgba(30, 48, 243, 0.80) 0%,   /* #1e30f3 at 75% opacity */
+        rgba(var(--bs-secondary-rgb), 0.80) 100% /* secondary color at 75% opacity */
+    );
+    color: #ecff21;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 767px) {
+    .lark-tank-iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;\
+    }
 }

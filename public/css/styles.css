@@ -714,6 +714,16 @@ progress {
   margin-left: auto;
 }
 
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
@@ -1293,7 +1303,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .col-lg {
     flex: 1 0 0%;
   }
@@ -11642,6 +11652,19 @@ html {
   font-size: 1.5rem;
 }
 
+.home-banner {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  align-items: center;
+  width: 100%;
+}
+
 .profile {
   position: relative;
   height: 75vw;
@@ -11651,77 +11674,20 @@ html {
   max-height: 40rem;
   max-width: 40rem;
 }
-.profile .profile-img {
-  height: 80vw;
-  max-height: 45rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-35%);
-  bottom: 0;
+.profile-img-container {
+  width: 100%;
+  justify-content: center;
 }
-
-.profile .cropped {
-  z-index: 1;
+.profile-img {
+  height: 40vw;
+  position: relative;
+  padding-left: auto;
 }
-
-.profile  .pop {
-  z-index: 2;
-
-  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 77%);
+.pi-centered {
+  display: initial;
 }
-
-.profile .cropper {
-  overflow: hidden;
-  position: absolute;
-  height: 75vw;
-  width: 75vw;
-  max-height: 40rem;
-  max-width: 40rem;
-  border-radius: 5vw;
-}
-
-.profile .dots-1 {
-  position: absolute;
-  width: 3vw;
-  right: 1.5vw;
-  top: 4vw;
-}
-.profile .dots-1 svg {
-  fill: #fff;
-}
-.profile .dots-2 {
-  position: absolute;
-  width: 3vw;
-  right: -4vw;
-  top: 6.05vw;
-}
-.profile .dots-2 svg {
-  fill: #1e30f3;
-}
-.profile .dots-3 {
-  position: absolute;
-  width: 3vw;
-  left: 1.5vw;
-  bottom: 6.05vw;
-}
-.profile .dots-3 svg {
-  fill: #fff;
-}
-.profile .dots-4 {
-  position: absolute;
-  width: 3vw;
-  left: -4vw;
-  bottom: 4vw;
-}
-.profile .dots-4 svg {
-  fill: #1e30f3;
-}
-
-@media (max-width: 575px) {
-  .profile .profile-img {
-    height: 65vw;
-    transform: translateX(-40vw)
-  }
+.pi-big {
+  display: none;
 }
 
 @media (min-width: 576px) {
@@ -11729,29 +11695,11 @@ html {
     height: 60vw;
     width: 60vw;
   }
-  .profile .cropper {
-    height: 60vw;
-    width: 60vw;
-  }
   .profile .profile-img {
     height: 65vw;
-    transform: translateX(-40vw)
   }
-  .profile .dots-1 {
-    width: 3vw;
-    right: 1.5vw;
-  }
-  .profile .dots-2 {
-    width: 3vw;
-    right: -4vw;
-  }
-  .profile .dots-3 {
-    width: 3vw;
-    left: 1.5vw;
-  }
-  .profile .dots-4 {
-    width: 3vw;
-    left: -4vw;
+  .home-banner {
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) {
@@ -11759,29 +11707,11 @@ html {
     height: 50vw;
     width: 50vw;
   }
-  .profile .cropper {
-    height: 50vw;
-    width: 50vw;
-  }
   .profile .profile-img {
     height: 55vw;
-    transform: translateX(-25vw)
   }
-  .profile .dots-1 {
-    width: 3vw;
-    right: 1.5vw;
-  }
-  .profile .dots-2 {
-    width: 3vw;
-    right: -4vw;
-  }
-  .profile .dots-3 {
-    width: 3vw;
-    left: 1.5vw;
-  }
-  .profile .dots-4 {
-    width: 3vw;
-    left: -4vw;
+  .home-banner {
+    flex-direction: column;
   }
 }
 @media (min-width: 992px) {
@@ -11789,29 +11719,23 @@ html {
     height: 40vw;
     width: 40vw;
   }
-  .profile .cropper {
-    height: 40vw;
-    width: 40vw;
-  }
   .profile .profile-img {
     height: 45vw;
-    transform: translateX(-20vw)
   }
-  .profile .dots-1 {
-    width: 1.5vw;
-    right: 0.75vw;
+  .home-banner {
+    flex-direction: row;
   }
-  .profile .dots-2 {
-    width: 1.5vw;
-    right: -2vw;
+  .pi-centered {
+  display: none;
   }
-  .profile .dots-3 {
-    width: 1.5vw;
-    left: 0.75vw;
+  .pi-big {
+    display: initial;
   }
-  .profile .dots-4 {
-    width: 1.5vw;
-    left: -2vw;
+  .profile-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-left: 2vw;
   }
 }
 @media (min-width: 1200px) {
@@ -11819,29 +11743,11 @@ html {
     height: 35vw;
     width: 35vw;
   }
-  .profile .cropper {
-    height: 35vw;
-    width: 35vw;
-  }
   .profile .profile-img {
-    height: 30vw;
-    transform: translateX(-20vw)
+    height: 40vw;
   }
-  .profile .dots-1 {
-    width: 1.5vw;
-    right: 0.75vw;
-  }
-  .profile .dots-2 {
-    width: 1.5vw;
-    right: -2vw;
-  }
-  .profile .dots-3 {
-    width: 1.5vw;
-    left: 0.75vw;
-  }
-  .profile .dots-4 {
-    width: 1.5vw;
-    left: -2vw;
+  
+  .home-banner {
+    flex-direction: row;
   }
 }
-
