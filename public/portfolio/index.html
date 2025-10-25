@@ -16,6 +16,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../css/styles.css" rel="stylesheet" />
+        <link href="./portfolio.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -30,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../resume">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../resume">Résumé</a></li>
                             <li class="nav-item"><a class="nav-link" href="../portfolio">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="../contact">Contact</a></li>
                         </ul>
@@ -44,60 +45,54 @@
                         <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Portfolio</span></h1>
                     </div>
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <div class="main-div">
                             <!-- Portfolio Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light rounded-4" style="overflow: hidden;">
-                                                <img width =200px style="align-items: center;" src="../assets/comingSoon.png"> 
+                            <a class="shadow rounded-4 portfolio-card portfolio-card-1" href="./camsynth/">
+                                <div class="portfolio-card-body">
+                                        <div class="col text-center mb-4 mb-lg-0">
+                                            <div href="./visualarts/" class="bg-light portfolio-image-box">
+                                                <img class="rounded-4 portfolio-image" src="../assets/Camsynth.png"> 
                                             </div>
                                         </div>
-                                        <div class="col-lg-8" ><div>
-                                            <h2 class="fw-bolder" style="text-align: right;">Fourier Synth</h2>
-                                            <p style="text-align: right;">A synth I designed, manufactured, and coded that uses the fourier series from tracing the outline of an image with spinning vectors to synthezies sound</p>
-                                            </div></div>
-                                    </div>
+                                        <div class="portfolio-text" >
+                                            <div class="btn btn-primary px-4 py-3 portfolio-button" href="./camsynth/">Project Highlight:</br>Fourier Camsynth</div>
+                                            <p >The showcase of a novel synth I designed, manufactured, and coded.</p>
+                                        </div>
                                 </div>
-                            </div>
+                            </a>
                             <!-- Portfolio Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        
-                                        <div class="col-lg-8" ><div>
-                                            <h2  class="fw-bolder"><a href="./music/">Music Portfolio</a></h2>
-                                            <p>Composed, produced, and recorded pieces.</p>
-                                        </div></div>
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <a href="./music/" class="bg-light " width=200px style="overflow: hidden; ">
-                                                <img class="rounded-4" width=200px  src="../assets/musicPortfolio.jpeg">
-                                            </a>
+                            <a class="shadow rounded-4 portfolio-card portfolio-card-2" href="./music/">
+                                <div class="portfolio-card-body">
+                                    
+                                    <div class="portfolio-text" ><div>
+                                        <div class="btn btn-primary px-4 py-3 portfolio-button" href="./camsynth/">Music Portfolio</div>
+                                        <p>A selection of pieces composed, produced, and/or performed by me.</p>
+                                    </div></div>
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div href="./music/" class="bg-light portfolio-image-box">
+                                            <img class="rounded-4 portfolio-image" src="../assets/musicPortfolio.jpeg">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
                             <!-- Portfolio Card 3-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        
-                                        <div class="col text-center mb-4 mb-lg-0">
-                                            <a href="./visualarts/" class="bg-light " width=200px style="overflow: hidden; ">
-                                                <img class="rounded-4" width =200px style="align-items: center;" src="../assets/SonyA7iv.png"> 
-                                            </a>
+                            <a class="shadow rounded-4 portfolio-card portfolio-card-3" href="./visualarts/">
+                                <div class="portfolio-card-body">
+                                    <div class="col text-center mb-4 mb-lg-0">
+                                        <div class="bg-light portfolio-image-box">
+                                            <img class="rounded-4 portfolio-image" style="align-items: center;" src="../assets/SonyA7iv.png"> 
                                         </div>
+                                    </div>
 
-                                        <div class="col-lg-8" ><div>
-                                            <h2 class="fw-bolder"><a href="./visualarts/">Visual Arts Portfolio</a></h2>
+                                    <div class="portfolio-text" >
+                                        <div>
+                                            <div class="btn btn-primary px-4 py-3 portfolio-button">Visual Arts Portfolio</div>
                                             <p>All of my work done with visual arts including Graphic Design, Photography, & Videography</p>
-                                        </div></div>
-                                        
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
                             
                             <!-- Project Card 2-->

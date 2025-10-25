@@ -1,0 +1,105 @@
+.music-card {
+    flex: 1 1 auto;
+    background-color: #fff;
+    color: #212529;
+    filter: drop-shadow(0 10px 10px #00000033);
+    cursor: pointer;
+    position: relative;
+}
+
+.music-expandable {
+    filter: drop-shadow(0 10px 10px #00000033);
+    padding: 0.5rem;
+    padding-left: 2rem;
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .music-expandable:hover {
+  background-color: #ffffee;
+}
+
+.song-title {
+    padding-left: 1rem;
+    font-weight: 600;
+}
+.song-subtitle {
+    padding-left: 1rem;
+    font-weight: 300;
+}
+.track-wrap {
+    padding: 1.5rem;
+}
+.track-card-text {
+    flex: 0 0 auto;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+.music-expand-content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.track-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: 0.75rem;
+    flex-direction: column;
+}
+.track-text {
+    text-align: center;
+}
+
+.music-card-body {
+    word-wrap: break-word;
+    background-color: #fff;
+    flex: 1 1 auto;
+    color: #212529;
+    filter: drop-shadow(0 10px 10px #00000033);
+    border-radius: 1rem
+}
+
+@media (min-width: 768px) {
+    .vid-card-text {
+        flex: 0 0 auto;
+        width: 40%;
+        font-size: 0.95rem;
+    }
+    .vid-card-body {
+        flex-direction: row;
+    }
+    .track-inner {
+        flex-direction: row;
+    }
+    .track-card-text {
+        flex: 0 0 auto;
+        width: 50%;
+        font-size: 0.95rem;
+        padding-left: 2rem;
+    }
+    .track-text {
+        text-align: right;
+    }
+    
+}
+@media (min-width: 992px) {
+    .vid-card-text {
+        flex: 0 0 auto;
+        width: 50%;
+        font-size: 0.95rem;
+    }
+    .vid-card-body {
+        flex-direction: row;
+    }
+    .track-card-text {
+        width: 60%;
+    }
+}

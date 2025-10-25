@@ -16,6 +16,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../../css/styles.css" rel="stylesheet" />
+        <link href="./music.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -30,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../../resume">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../resume">Résumé</a></li>
                             <li class="nav-item"><a class="nav-link" href="../../portfolio">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="../../contact">Contact</a></li>
                         </ul>
@@ -52,42 +53,285 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
                             <!-- Portfolio Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
+                            <div class="card border-0 rounded-4 mb-3">
+                                <div class="music-card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light rounded-4" style="overflow: hidden;">
-                                                <iframe width="100%" height="100%" src="https://youtube.com/embed/AYHtWL5to9M">  </iframe>
+                                            <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                
+                                                <iframe width=100% height=100% src="https://www.youtube.com/embed/Awj-B_TNOPo?si=ioy5Sf8MOQqJOnPs" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                
                                             </div>
                                         </div>
-                                        <div class="col-lg-8" ><div>
+                                        <div class="vid-card-text" ><div>
                                             <h2 class="fw-bolder" style="text-align: right;">General Demo Reel</h2>
-                                            <p style="text-align: right;">Excerpts of my best works. Some released, some to be released. All fully produced by me. </p>
+                                            <p style="text-align: right;">Excerpts of my best works. Some released, some to be released. All fully produced by me. Full versions can be found in the dropdowns below</p>
                                             </div></div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Portfolio Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        
-                                        <div class="col-lg-8" ><div>
-                                            <h2 class="fw-bolder">Remix Demo Reel</h2>
-                                            <p>Excerpts from four remixes made by me as commissions and personal projects. </p>
-                                        </div></div>
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light rounded-4" style="overflow: hidden;">
-                                                <iframe width="100%" height="100%" src="https://youtube.com/embed/C2O5Gwws3mQ">  </iframe>
+                            <!-- Dropdowns -->
+                             
+                            <div class="music-card border-0 rounded-4 mb-2" style="overflow: hidden;">
+                                <button type="button" class="music-expandable border-0">
+                                    <i class="bi bi-caret-right"></i>
+                                    <div class="song-title">
+                                        Loving in Your Chains
+                                    </div>
+                                    <div class="song-subtitle">
+                                        Jazz-pop
+                                    </div>
+                                </button>
+                                <div class="music-expand-content align-items-center gx-5">
+                                    <div class="track-wrap">
+                                        <div class="track-inner align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                    <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/164iUj7Rya8?si=ioy5Sf8MOQqJOnPs" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+                                                </div>
+                                            </div>
+                                            <div class="track-card-text" >
+                                                
+                                                <p class="track-text">Planned to be the first song in my 2026 Album, "Loving in Your Chains" represents a maturity in my voice, production skill, and a maturity in topic. It features a number of live instruments, including drums by Cyan Stockfield, a saxophone solo by Iyegbekosa Ohanmu, and electric guitar by me.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="music-card border-0 rounded-4 mb-2" style="overflow: hidden;">
+                                <button type="button" class="music-expandable border-0">
+                                    <i class="bi bi-caret-right"></i>
+                                    <div class="song-title">
+                                        Crumbling Sand
+                                    </div>
+                                    <div class="song-subtitle">
+                                        Jazz-pop
+                                    </div>
+                                </button>
+                                <div class="music-expand-content align-items-center gx-5">
+                                    <div class="track-wrap">
+                                        <div class="track-inner align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                    <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/2I8wfgjYtes?si=NedKmPQtpkO2y-rC" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+                                                </div>
+                                            </div>
+                                            <div class="track-card-text" >
+                                                
+                                                <p class="track-text">This up beat jazz-pop song about my internal religous turmoil is the name sake of my first EP. It was produced by me in 2023. The chorus of this video was animated by me using Motion Canvas, the rest was animated by <a target="_blank" style="color:#000" href="https://www.youtube.com/@VesperaGenshin">SparkleNinja</a>. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="music-card border-0 rounded-4 mb-2" style="overflow: hidden;">
+                                <button type="button" class="music-expandable border-0">
+                                    <i class="bi bi-caret-right"></i>
+                                    <div class="song-title">
+                                        Time's Fine Sands
+                                    </div>
+                                    <div class="song-subtitle">
+                                        Breakcore
+                                    </div>
+                                </button>
+                                <div class="music-expand-content align-items-center gx-5">
+                                    <div class="track-wrap">
+                                        <div class="track-inner align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                    <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/GOPQT-m9bSU?si=ioy5Sf8MOQqJOnPs">  </iframe>
+                                                </div>
+                                            </div>
+                                            <div class="track-card-text" >
+                                                
+                                                <p class="track-text">Jumping genres, "Times Fine Sands" is a breakcore beat that focuses on packing as much skilled lyricism and production tricks into a short song as possible. This video was fully animated by <a target="_blank" style="color:#000" href="https://www.youtube.com/@VesperaGenshin">SparkleNinja</a>. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="music-card border-0 rounded-4 mb-2" style="overflow: hidden;">
+                                <button type="button" class="music-expandable border-0">
+                                    <i class="bi bi-caret-right"></i>
+                                    <div class="song-title">
+                                        I Could Tell You
+                                    </div>
+                                    <div class="song-subtitle">
+                                        Lo-Fi
+                                    </div>
+                                </button>
+                                <div class="music-expand-content align-items-center gx-5">
+                                    <div class="track-wrap">
+                                        <div class="track-inner align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                    <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/3KYqrp6j1z4?si=ioy5Sf8MOQqJOnPs" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+                                                </div>
+                                            </div>
+                                            <div class="track-card-text" >
+                                                
+                                                <p class="track-text">"I Could Tell You" comes from much more personal emotions. The slow, melancholy song was written as a distant friend was struggling with depression. It uses that melancholy feeling to depict the feeling of being on the outside feeling as if there's nothing you can do.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="music-card border-0 rounded-4 mb-2" style="overflow: hidden;">
+                                <button type="button" class="music-expandable border-0">
+                                    <i class="bi bi-caret-right"></i>
+                                    <div class="song-title">
+                                        'Till the Quota's Due
+                                    </div>
+                                    <div class="song-subtitle">
+                                        R&B
+                                    </div>
+                                </button>
+                                <div class="music-expand-content align-items-center gx-2">
+                                    <div class="track-wrap">
+                                        <div class="track-inner align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                    <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/dq3mdEEFUV4?si=ioy5Sf8MOQqJOnPs" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+                                                </div>
+                                            </div>
+                                            <div class="track-card-text" >
+                                                
+                                                <p class="track-text">Written and released in 2024, "'Till the Quota's Due" is a Nerdcore piece. Nerdcore music includes songs about traditionally "nerdy" things such as video games, anime, TV shows, etc. This song is set in the game "Lethal Company." It makes use of industrial sounds as the backbone to its beat to invoke the cold, capitalistic nature of the game.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="music-card border-0 rounded-4 mb-2" style="overflow: hidden;">
+                                <button type="button" class="music-expandable border-0">
+                                    <i class="bi bi-caret-right"></i>
+                                    <div class="song-title">
+                                        Sunrise (A Capella)
+                                    </div>
+                                    <div class="song-subtitle">
+                                        A Capella
+                                    </div>
+                                </button>
+                                <div class="music-expand-content align-items-center gx-2">
+                                    <div class="track-wrap">
+                                        <div class="track-inner align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                    <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/L3hEatiL2ec?si=ioy5Sf8MOQqJOnPs" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+                                                </div>
+                                            </div>
+                                            <div class="track-card-text" >
+                                                
+                                                <p class="track-text">This a capella piece is a remix of an original electronic piece I released with my first EP, "<a style="color:#000" target="_blank" href="https://www.youtube.com/watch?v=s2iebQMUc3Y">Sunrise</a>." This a capella version was arranged by me and performed by Brandeis Voicemale, the masculine-centered a capella group I music direct. The song was recorded and mixed by me.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="music-card border-0 rounded-4 mb-2" style="overflow: hidden;">
+                                <button type="button" class="music-expandable border-0">
+                                    <i class="bi bi-caret-right"></i>
+                                    <div class="song-title">
+                                        Velvet Eyes
+                                    </div>
+                                    <div class="song-subtitle">
+                                        Jazz-pop
+                                    </div>
+                                </button>
+                                <div class="music-expand-content align-items-center gx-2">
+                                    <div class="track-wrap">
+                                        <div class="track-inner align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                    <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/oTTUVEu2MHY?si=ioy5Sf8MOQqJOnPs" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+                                                </div>
+                                            </div>
+                                            <div class="track-card-text" >
+                                                
+                                                <p class="track-text">"Velvet Eyes" features a slow, steady jazz-pop beat with rhythmic interplay between the drums, piano, and the various leads. It features synth brass as well as a number of harmonies behind my bass vocals.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="music-card border-0 rounded-4 mb-2" style="overflow: hidden;">
+                                <button type="button" class="music-expandable border-0">
+                                    <i class="bi bi-caret-right"></i>
+                                    <div class="song-title">
+                                        Fiction
+                                    </div>
+                                    <div class="song-subtitle">
+                                        Breakcore
+                                    </div>
+                                </button>
+                                <div class="music-expand-content align-items-center gx-2">
+                                    <div class="track-wrap">
+                                        <div class="track-inner align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                    <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/f3oKobA8WbE?si=ioy5Sf8MOQqJOnPs" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+                                                </div>
+                                            </div>
+                                            <div class="track-card-text" >
+                                                
+                                                <p class="track-text">"Fiction" voices an internal debate on if it's ethicial or healthy to mine my own personal, heart wrenching experiences for the sake of writing good songs. This fast-paced song was fully produced by me and features a verse sung by <a style="color: #000;" href="https://open.spotify.com/intl-fr/artist/0PKcgoWKSUocu0yY7hSNAN?si=mh1hoYYhQXOLV-zDsKRvnQ">Fids</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="music-card border-0 rounded-4 mb-5" style="overflow: hidden;">
+                                <button type="button" class="music-expandable border-0">
+                                    <i class="bi bi-caret-right"></i>
+                                    <div class="song-title">
+                                        The World Can Wait
+                                    </div>
+                                    <div class="song-subtitle">
+                                        Orchestral Folk
+                                    </div>
+                                </button>
+                                <div class="music-expand-content align-items-center gx-2">
+                                    <div class="track-wrap">
+                                        <div class="track-inner align-items-center gx-5">
+                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;">
+                                                    <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/s83y3tfY4WI?si=ioy5Sf8MOQqJOnPs" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+                                                </div>
+                                            </div>
+                                            <div class="track-card-text" >
+                                                
+                                                <p class="track-text">"The World Can Wait" is another Nerdcore song. Although it's written about "Zelda: Breath of the Wild," it has a more general thesis: to slow down and not let life pass you by as you rush through it. It uses orchestral instruemnts and a marching drum beat to invoke the fantasy setting of the game. The video was animated by me but the art was made by Sleepy Lemur.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+                            <!-- Portfolio Card 2-->
+                            <div class="card border-0 rounded-4 mb-5">
+                                <div class="music-card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        
+                                        <div class="vid-card-text" ><div>
+                                            <h2 class="fw-bolder">Remix Demo Reel</h2>
+                                            <p>Excerpts from four remixes made by me as commissions and personal projects. </p>
+                                        </div></div>
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light rounded-4" style="overflow: hidden; aspect-ratio: 16/9;" >
+                                                <iframe width="100%" height="100%" allow="fullscreen;" src="https://www.youtube.com/embed/C2O5Gwws3mQ?si=ioy5Sf8MOQqJOnPs" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
 
                             <!-- Portfolio Card 3-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
+                            <div class="card  border-0 rounded-4 mb-5">
+                                <div class="music-card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         
                                         <div class="col text-center mb-4 mb-lg-0">
@@ -96,7 +340,7 @@
                                             </a>
                                         </div>
 
-                                        <div class="col-lg-8" ><div>
+                                        <div class="vid-card-text"><div>
                                             <h2 class="fw-bolder">My Channel</h2>
                                             <p>Check out my published videos!</p>
                                         </div></div>
@@ -150,6 +394,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="../scripts.js"></script>
+        <script src="./music.js"></script>
     </body>
 </html>
